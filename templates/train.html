@@ -1,0 +1,12 @@
+{% extends "page.html" %}
+
+{% block train %}
+    <h2 align="center">{{ arg }}</h2>
+    {% if arg == 'Инженерные тренажеры' %}
+        <img src="../static/img/ИТ.jpg">
+    {% elif arg == 'Научные симуляторы' %}
+        <img src="../static/img/НС.jpg">
+    {% else %}
+        <img src="../static/img/БТ.jpg">
+    {% endif %}
+{% endblock %}
